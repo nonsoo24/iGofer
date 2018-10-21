@@ -14,7 +14,6 @@
         <link rel="stylesheet" type="text/css" media="screen and (min-width: 550px)" href="index-medium.css">
         <link rel="stylesheet" type="text/css" media="screen and (min-width: 700px)" href="index-large.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min,css">
 
 
 
@@ -111,26 +110,18 @@
   </div>
 
 <div class="form-group">
-      <label for="inputEmail" class="form-control"><strong>Password *</strong></label>
-      <div class="input-group">
+      <label for="inputEmail" class="control-label"><strong>Password *</strong></label>
       <input type="email" class="form-control" id="password" aria-describedby ="password" name="password" placeholder="password" data-toggle="password">
-      <div class="input-group-append">
-        <div class="input-group-text"><i class="fa fa-eye"></i>
       <small id="password_error" class="red-text flag-error"></small>
   </div>
-</div>
-</div>
-</div>
-</div>
-
 
   <div class="checkbox">
     <label><input type="checkbox"> Remember me</label>
   </div>
-<label><input id="methods" type="checkbox"/>Show password</label>
 
-
-  <button name="sub" id="submitForm" class="btn btn-primary">Login</button>
+<div class="col-xs-12 col-sm-12 col-ms-12 align-center wow zoomIn text-center"> 
+  <button name="sub" id="submitForm" class="btn btn-lg btn-primary">Login</button>
+</div>
 
 </form>
 
@@ -167,9 +158,10 @@
 
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="bootstrap-show-password.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  $("#password").password('toggle');
+</script> 
 <script type="text/javascript">
 window.onscroll = function() {scrollFunction()};
 
@@ -212,29 +204,6 @@ $("form").submit(function (e) {
 
 }
 });
-
-$(function() {
-
-  $('#password').password().on('show.bs.password', function(e) {
-
-    $('#methods').prop('checked', true);
-
-    }).on('hide.bs.password', function(e) {
-      $('#methods').prop('checked', false);
-
-    });
-    $('#methods').click(function() {
-      $('#password').password('toggle');
-  });
-});
-
-placement: 'after', // 'before' or 'after'
-white: false, // v2
-message: 'Click here to show/hide password',
-eyeClass: 'glyphicon',
-eyeOpenClass: 'glyphicon-eye-open',
-eyeCloseClass: 'glyphicon-eye-close'
-
 </script>
 
 
