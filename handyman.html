@@ -174,16 +174,16 @@
 
   <div class="col-xs-6 col-sm-6 col-ms-6">
       <div class="form-group">
-          <label for="inputEmail" class="control-label"><strong>Bank Verification Number (BVN) *</strong></label>
-          <input type="number" class="form-control" id="BVN" aria-describedby ="password" name="BVN" placeholder="BVN">
+          <label for="inputBVN" class="control-label"><strong>Bank Verification Number (BVN) *</strong></label>
+          <input type="number" class="form-control" id="BVN" aria-describedby ="BVN" name="BVN" placeholder="BVN">
           <small id="BVN_error" class="red-text flag-error"></small>
       </div>
   </div>
 
   <div class="col-xs-6 col-sm-6 col-ms-6">
       <div class="form-group">
-          <label for="inputEmail" class="control-label"><strong>Bank Account Number *</strong></label>
-          <input type="number" class="form-control" id="accountNo" aria-describedby ="password" name="accountNo" placeholder="Bank Account Number">
+          <label for="inputBVN" class="control-label"><strong>Bank Account Number *</strong></label>
+          <input type="tel" class="form-control" id="accountNo" aria-describedby ="accountNo" name="accountNo" placeholder="Bank Account Number">
           <small id="accountNo_error" class="red-text flag-error"></small>
       </div>
   </div>
@@ -191,7 +191,7 @@
 
   <div class="col-xs-6 col-sm-6 col-ms-6">
       <div class="form-group">
-          <label for="inputEmail" class="control-label"><strong>Password *</strong></label>
+          <label for="inputPassword" class="control-label"><strong>Password *</strong></label>
           <input type="password" class="form-control" id="password" aria-describedby ="password" name="inputPassword" placeholder="password">
           <small id="password_error" class="red-text flag-error"></small>
       </div>
@@ -199,8 +199,8 @@
 
    <div class="col-xs-6 col-sm-6 col-ms-6">
       <div class="form-group">
-          <label for="inputEmail" class="control-label"><strong>Confirm password *</strong></label>
-          <input type="repassword" class="form-control" id="confirmPassword" aria-describedby ="password" name="rePassword" placeholder="confirm password">
+          <label for="inputRepassword" class="control-label"><strong>Confirm password *</strong></label>
+          <input type="password" class="form-control" id="confirmPassword" aria-describedby ="password" name="rePassword" placeholder="confirm password">
           <small id="rePassword_error" class="red-text flag-error"></small>
       </div>
   </div> 
@@ -315,10 +315,25 @@ $("form").submit(function (e) {
 
     $("#error").html(error);
 
-    if ($("inputMessage").val() == "") {
+    if ($("BVN_error").val() == "") {
 
-      error + = "<p>The Message field is required</p>";
+      error + = "<p> kindly enter your BVN </p>";
     }
+
+    $("#error").html(error);
+
+    if ($("accountNo_error").val() == "") {
+
+      error + = "<p> kindly enter your BVN </p>";
+    }
+
+    $("#error").html(error);
+
+    if ($("phoneNumber_error").val() == "") {
+
+      error + = "<p> kindly enter your BVN </p>";
+    }
+
 
     if (error !="") {
 
