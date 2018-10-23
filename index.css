@@ -9,29 +9,21 @@
    } 
 
 
-body {
+    body {
 
-    width: 100%;
-    height: 100%; 
-    margin: 0;
-    padding: 0;
-
-    }
-
-	
- 		.class {
-
-            font-size: 40px;
-            top: 40px;
+        width: 100%;
+        height: 100%; 
+        margin: 0;
+        padding: 0;
 
         }
 
-        .logo{
+        .logo {
             width: 130px;
             padding: 0px;
             margin-left: 0px;
             margin-top: 0px;
-    }
+        }
 
 
         
@@ -46,8 +38,9 @@ body {
             margin-top:10px;
             background-color: white;
 
-        }       
-        
+        }
+
+       
         .nav-link {
             font-size: 18px;
             cursor: pointer;
@@ -266,7 +259,7 @@ body {
             -webkit-transform: scale(1);
             -ms-transform: scale(1);
             transform: scale(1);
-        }
+}
 
 
 
@@ -281,4 +274,4 @@ body {
 
         .work-writeup {
             font-size: 20px;
-}
+        }
