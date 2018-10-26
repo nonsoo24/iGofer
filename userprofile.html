@@ -82,127 +82,67 @@
 <body>
 
 
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<p id="#films">&nbsp;</div>
+<p id="#films">&nbsp;</div>
+<p id="#films">&nbsp;</div>
+<p id="#films">&nbsp;</div>
 
 
-<section class="section section-login">
 <div class="container">
+<div class="row profile">
+<div class="col-md-3">
+  <div class="profil-sidebar">
+    <div class="profile-user-pic">
+      <img src="http://guarddome.com/assets/images/profile-img.jpg" alt="" class="img-responsive img-circle">
+      
+    </div>
 
-<div class="row">
-<div class="col-md-4 col-md-offset-4"> 
-  <div class="card card-body">
+    <div class="profile-user-title">
+    <div class="profile-user-name">
+      Daniel Chukwurah 
+    </div>  
 
-<h2 style="text-align: center;"><strong> Account Login </strong></h2>
-<p>&nbsp;</p>
+    <div class="user-phoneNo">
+      07038653848
+    </div>
 
-<form>   
+    <div class="user-email">
+      daniel.chukwurah@gmail.com
+    </div>
 
- <div class="form-group">  
+    </div>
 
-   <div class="form-group">
-      <label for="inputEmail" class="control-label"><strong>Email address *</strong></label>
-      <input type="email" class="form-control" id="inputEmail" aria-describedby ="emailHelp" name="inputEmail" placeholder="Email" required>
-      <small id="email_error" class="red-text flag-error"></small>
+    <div class="profilr-user-buttons">
+      <button class="btn btn-success btn-sm">Request</button>
+      <button class="btn btn-success btn-sm">Subcribe</button>
   </div>
 
-<div class="form-group">
-      <label for="inputEmail" class="control-label"><strong>Password *</strong></label>
-      <input type="password" class="form-control" id="password" aria-describedby ="password" name="password" placeholder="password" data-toggle="password" required>
-      <small id="password_error" class="red-text flag-error"></small>
-  </div>
-
-  <div class="checkbox">
-    <label><input type="checkbox"> Remember me</label>
-  </div>
-
-<div class="col-xs-12 col-sm-12 col-ms-12 align-center wow zoomIn text-center"> 
-  <button name="sub" id="submitForm" class="btn btn-lg btn-primary">Login</button>
-</div>
-
-</form>
-
-<p></p>
-<p><a href="">forgot password?</a></p>
-<p>Don't have an account yet? <a href="handyman.html">Sign up</a></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-</section>
-  
-
-  
-</form>
-
- </div>
-</div>
-
-
-
-
-      <p id="#films">&nbsp;</div>
-      <p id="#films">&nbsp;</div>
-
-
-
-
-
-
-
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="bootstrap-show-password.min.js"></script>
-<script type="text/javascript">
-  $("#password").password('toggle');
-</script> 
-<script type="text/javascript">
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-
-
-$("form").submit(function (e) {
-
-    e.preventDefault();
-
-    var error = "";
-    if ($("inputEmail").val() == "") {
-
-      error + = "<p> Please enter your Email Address</p>";
-    }
-
+  <div class="profile-use-menu">
+    <ul class="nav">
+      <li class="active"><a href=""><i class="glyphicon glyphicon-home"></i>Dashboard</a></li>
+          <li class=""><a href=""><i class="glyphicon glyphicon-time"></i>Requests</a></li>
+              <li class=""><a href=""><i class="glyphicon glyphicon-credit-card"></i>Subscribe</a></li>
+                  <li class=""><a href=""><i class="glyphicon glyphicon-time"></i>Subscription history</a></li>
+                      <li class=""><a href=""><i class="glyphicon glyphicon-comment"></i>Messages</a></li>
+                          
+    </ul>
     
-    $("#error").html(error);
+  </div>
+</div>
+</div>
+<div class="col-md-9">
+  <p>
+    
+We take our business and our impact very seriously. We know the tobacco industry is a controversial one, and so it’s all the more important that we act responsibly, from the crop right through to the consumer.
 
-    if ($("password").val() == "") {
+Acting responsibly
+We take pride in the responsible way that our businesses are run. And the recognition and awards we’ve received over the decades show it’s not just us who think we’re doing the right thing.
 
-      error + = "<p>enter password</p>";
-    }
 
-    if (error !="") {
+  </p>
+</div> 
+</div>
 
-      $("#error").html(error);
-
-}
-});
 </script>
 
 

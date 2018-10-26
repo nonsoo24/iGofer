@@ -174,11 +174,13 @@
         }
 
         .search-section {
+            background: url('img/image 24.jpg') no-repeat center center; 
+           background-size: cover; 
             margin-top: 30px;
         }
 
         .section-login {
-            margin-left: 600px;
+            margin-left: 590px;
             width: 900px;
         }
 
@@ -274,4 +276,50 @@
 
         .work-writeup {
             font-size: 20px;
-        }
+
+       }
+
+       .profile {
+        margin: 20px 0;
+       }
+
+       .profile-sidebar {
+        padding: 20px 0 10px 0;
+        background: #fff;
+
+       }
+
+       .profile-user-pic {
+        float: none;
+        margin-left: 0 auto;
+        width: 50%;
+        height: 50%;
+       }
+
+       .profile-user-name {
+        color: #5a73a1;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 7px;
+       }
+
+       .profile-user-job {
+        text-transform: uppercase;
+        color: #5babd1;
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 15px;
+       }
+
+       .profile-user-buttons{
+        text-align: center;
+        margin-top: 10px;
+       }
+
+       .btn {
+        text-transform: uppercase;
+        font-size: 11px;
+        font-weight: 600;
+        padding: 6px 15px
+        margin-right: 5px;
+       }

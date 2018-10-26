@@ -106,19 +106,19 @@
 
    <div class="form-group">
     <label for="inputEmail" class="control-label"><strong>Email address *</strong></label>
-    <input type="email" class="form-control" id="inputEmail" aria-describedby ="emailHelp" name="inputEmail" placeholder="Enter email address">
+    <input type="email" class="form-control" id="inputEmail" aria-describedby ="emailHelp" name="inputEmail" placeholder="Enter email address" required>
     <small id="email_error" class="red-text flag-error"></small>
   </div>
 
   <div class="form-group">
     <label for="inputMessage"><strong>Subject *</strong></label>
-    <textarea class="form-control" id="inputSubject" name="inputSubject" rows="1"></textarea>
+    <textarea class="form-control" id="inputSubject" name="inputSubject" rows="1" required></textarea>
     <small id="subject_error" class="red-text flag-error"></small>
   </div>
 
   <div class="form-group">
     <label for="inputMessage"><strong>Message *</strong></label>
-    <textarea class="form-control" id="inputMessage" name="inputMessage" rows="6"></textarea>
+    <textarea class="form-control" id="inputMessage" name="inputMessage" rows="6" required></textarea>
     <small id="message_error" class="red-text flag-error"></small>
   </div>
     <button name="sub" id="submitForm" class="btn btn-lg btn-primary">Send</button>
