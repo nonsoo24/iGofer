@@ -1,4 +1,5 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
+
 
 <html lang="en">
 
@@ -26,7 +27,7 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
         <a class="nav-link" href="igofer.html"><strong>Home </strong><span class="sr-only">(current)</span></a>
       </li>
@@ -35,27 +36,14 @@
         <a class="nav-link" href="contact.html"><strong>Contact Us</strong></a>
       </li>
 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         <strong>Services</strong>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Handyman services</a>
-          <a class="dropdown-item" href="#">Food services</a>
-          <a class="dropdown-item" href="#">Logistics</a>
-          <a class="dropdown-item" href="#">Errands</a>
-          <a class="dropdown-item" href="#">Academics</a>
-          <a class="dropdown-item" href="#">Event management</a>
-          <a class="dropdown-item" href="#">Virtual Assistance</a>
-        </div>
-      </li>
+      
 
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
          <strong>Join</strong>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="handyman.html">Service provider</a>
+          <a class="dropdown-item" href="worker.html">Worker</a>
           <a class="dropdown-item" href="member.html">Client</a>
 
         </div>
@@ -67,7 +55,7 @@
          <strong>Login</strong>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="loginservice.html">Service provider</a>
+          <a class="dropdown-item" href="loginservice.html">Worker</a>
           <a class="dropdown-item" href="loginclient.html">Client</a>
 
   
@@ -99,7 +87,9 @@
 
 <form>   
 
- <div class="form-group">  
+ <div class="form-group"> 
+ <p style="text-align: center;"><span id="hideBtn" class="btn btn-sm btn-secondary" data-toggle="tab">Worker</span> | <span id="showBtn" class="btn btn-sm btn-primary">Client</span></p>
+ 
 
    <div class="form-group">
       <label for="inputEmail" class="control-label"><strong>Email address *</strong></label>
