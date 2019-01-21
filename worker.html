@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <script type="text/javascript" src="bootstrap/js/jquery-validation/dist/jquery.validate.min.js"></script>
 
 
 
@@ -20,48 +21,47 @@
 
 
 <header class="fixed-top scroll-change">
-<nav class="navbar navbar-expand-lg navbar-light bg-light" id="top">
-  <a class="navbar-brand" href="igofer.html"><img src="img/logo.jpg" alt="logo" class="logo"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="top">
+        <a class="navbar-brand" href="igofer.html"><img src="img/logo.jpg" alt="logo" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="igofer.html"><strong>Home </strong><span class="sr-only">(current)</span></a>
-      </li>
-  
-      <li class="nav-item">
-        <a class="nav-link" href="contact.html"><strong>Contact Us</strong></a>
-      </li>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="igofer.html"><strong>Home </strong><span class="sr-only">(current)</span></a>
+        </li>
+    
+        <li class="nav-item">
+            <a class="nav-link" href="contact.html"><strong>Contact Us</strong></a>
+        </li>
 
 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         <strong>Join</strong>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="worker.html">Worker</a>
-          <a class="dropdown-item" href="member.html">Client</a>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <strong>Join</strong></a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="worker.html">Worker</a>
+            <a class="dropdown-item" href="member.html">Client</a>
 
-        </div>
-      </li>
-      
+            </div>
+        </li>
+        
 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         <strong>Login</strong>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="loginservice.html">Worker</a>
-          <a class="dropdown-item" href="loginclient.html">Client</a>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <strong>Login</strong>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="loginservice.html">Worker</a>
+            <a class="dropdown-item" href="loginclient.html">Client</a>
 
-  
-    </ul>
-  </div>
-</div>
-</nav>
+    
+        </ul>
+    </div>
+    </div>
+    </nav>
 </header>
 
 
@@ -69,146 +69,449 @@
 <body>
 
 
-<p id="#films">&nbsp;</div>
-<p id="#films">&nbsp;</div>
-<p id="#films">&nbsp;</div>
-<p id="#films">&nbsp;</div>
-
-
-<div class="container">
-
-    <h2 style="text-align: center;"><strong>Join iGofer (To work)</strong></h2>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-
-<form>   
-
- <div class="form-group row" id="worker">
-   <div class="row">
-        <div class="col-xs-6 col-sm-6 col-ms-6">
-          <div class="form-group">
-              <label for="inputFullname"><strong>First Name *</strong></label>
-              <input type="name" class="form-control" id="inputFirstname" aria-describedby="fullName" name="inputFullname" placeholder="First name">
-              <small id="fullname_error" class="red-text flag-error"></small>
+ 
+    <div id="workers-form">
+            <h2 style="text-align: center;"><strong>Join iGofer (To work)</strong></h2>
+    
+        <div class="form">
+        
+       <div class="container">
+            <div class="form-group">
+                <label for="surname">Surname</label>
+                <input type="text" name="surname" id="" required >
+                <!-- <div id="surname_error" class="val_error">
+                    <i class="fas fa-times-circle">Enter Surname</i>
+                </div>
+                <div id="no_number" class="val_error">
+                    <i class="fas fa-times-circle">This field should contain only text.</i>
+                </div> -->
+                     
             </div>
-          </div>  
+        
+                <div class="form-group">
+                    <label for="first-name">First name</label>
+                    <input type="text" name="firstname" required>
+                    <!-- <div id="firstname_error" class="val_error"><i class="fas fa-times-circle">Enter First name</i></div> -->
+                </div>
 
-     <div class="col-xs-6 col-sm-6 col-ms-6">
-       <div class="form-group">
-          <label for="inputFullname"><strong>Surname *</strong></label>
-          <input type="name" class="form-control" id="inputSurname" aria-describedby="Esurname" name="surname" placeholder="Surname">
-          <small id="fullname_error" class="red-text flag-error"></small>
-      </div>
-    </div>
+                <div class="form-group">
+                    <label for="other-names">Other names</label>
+                    <input type="text" name="othernames">
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="" name="gender" required>
+                        <option value="">Select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>    
+                    </select>
+                    <!-- <div id="gender_error" class="val_error"><i class="fas fa-times-circle"></i>Select Gender</div> -->
+                </div>
+
+                <div class="form-group">
+                    <label for="dbirth">Date of birth</label>
+                    <input type="date" name="dbirth" required>
+                    <!--
+                     <div id="dbirth_error" class="val_error"><i class="fas fa-times-circle">Enter Date of birth</i></div> -->
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" required>
+                    <!-- <div id="email_error" class="val_error"><i class="fas fa-times-circle">Enter of email address</i></div> -->
+                </div>
+
+                <div class="form-group">
+                    <label for="number">Phone number</label>
+                    <input type="number" maxlength="11" name="number" required>
+                    <!-- <div id="pnumber_error" class="val_error"><i class="fas fa-times-circle">Enter phone number</i></div> -->
+                </div>
+
+                <div class="form-group">
+                    <label for="">Contact Address</label>
+                    <input type="text" name="caddress" required>
+                    <!-- <div id="caddress_error" class="val_error"><i class="fas fa-times-circle">Enter contact address</i></div> -->
+                </div>
+
+                <div class="form-group">
+                    <label for="">Permanent Address</label>
+                    <input type="text" name="paddress" required>
+                   
+                </div>
+
+                <div class="form-group">
+                    <label for="">Marital status</label>
+                    <select id="Marital-status" name="status" required>
+                        <option value="">Select</option>
+                        <option value="Single">Single</option>
+                        <option value="Engaged">Engaged</option>
+                        <option value="Married">Married</option> 
+                        <option value="Divorced">Divorced</option>
+                </select>
+                <!-- <div id="status_error" class="val_error"><i class="fas fa-times-circle">Select marital status</i></div>  -->
+                </div>
+
+                <div class="form-group">
+                    <label for="">State of origin</label>
+                    <select id="statee" name="origin" required>
+                        <option value="">Select</option>
+                        <option value="Abia">Abia</option>
+                        <option value="Adamawa">Adamawa</option>
+                        <option value="Akwa Ibom">Akwa Ibom</option>
+                        <option value="Anambra">Anambra</option>
+                        <option value="Bauchi">Bauchi</option>
+                        <option value="Bayelsa">Bayelsa</option>
+                        <option value="Benue">Benue</option>
+                        <option value="Borno">Borno</option>
+                        <option value="Cross River">Cross River</option>
+                        <option value="Delta">Delta</option>
+                        <option value="Ebonyi">Ebonyi</option>
+                        <option value="Enugu">Enugu</option>
+                        <option value="Edo">Edo</option>
+                        <option value="Ekiti">Ekiti</option>
+                        <option value="Gombe">Gombe</option>
+                        <option value="Imo">Imo</option>
+                        <option value="Jigawa">Jigawa</option>
+                        <option value="Kaduna">Kaduna</option>
+                        <option value="Kano">Kano</option>
+                        <option value="Katsina">Katsina</option>
+                        <option value="Kebbi">Kebbi</option>
+                        <option value="Kogi">Kogi</option>
+                        <option value="Kwara">Kwara</option>
+                        <option value="Lagos">Lagos</option>
+                        <option value="Nasarawa">Nasarawa</option>
+                        <option value="Niger">Niger</option>
+                        <option value="Ogun">ogun</option>
+                        <option value="Ondo">Ondo</option>
+                        <option value="Osun">Osun</option>
+                        <option value="Oyo">Oyo</option>
+                        <option value="Plateau">Plateau</option>
+                        <option value="River">Rivers</option>
+                        <option value="Sokoto">Sokoto</option>
+                        <option value="Taraba">Taraba</option>
+                        <option value="Yobe">Yobe</option>
+                        <option value="Zamfara">Zamfara</option>
+                        <option value="FCT">FCT</option>
+                    </select>
+                    <!-- <div id="origin_error" class="val_error"><i class="fas fa-times-circle">Select state</i></div> -->
+                </div>
+
+                <div class="form-group">
+                    <label for="">State of residence</label>
+                    <select id="statee" name="residence" required>
+                            <option value="">Select</option>
+                            <option value="Abia">Abia</option>
+                            <option value="Adamawa">Adamawa</option>
+                            <option value="Akwa Ibom">Akwa Ibom</option>
+                            <option value="Anambra">Anambra</option>
+                            <option value="Bauchi">Bauchi</option>
+                            <option value="Bayelsa">Bayelsa</option>
+                            <option value="Benue">Benue</option>
+                            <option value="Borno">Borno</option>
+                            <option value="Cross River">Cross River</option>
+                            <option value="Delta">Delta</option>
+                            <option value="Ebonyi">Ebonyi</option>
+                            <option value="Enugu">Enugu</option>
+                            <option value="Edo">Edo</option>
+                            <option value="Ekiti">Ekiti</option>
+                            <option value="Gombe">Gombe</option>
+                            <option value="Imo">Imo</option>
+                            <option value="Jigawa">Jigawa</option>
+                            <option value="Kaduna">Kaduna</option>
+                            <option value="Kano">Kano</option>
+                            <option value="Katsina">Katsina</option>
+                            <option value="kebbi">Kebbi</option>
+                            <option value="kogi">Kogi</option>
+                            <option value="Lagos">Lagos</option>
+                            <option value="Nasarawa">Nasarawa</option>
+                            <option value="Niger">Niger</option>
+                            <option value="Ogun">ogun</option>
+                            <option value="Ondo">Ondo</option>
+                            <option value="Osun">Osun</option>
+                            <option value="Oyo">Oyo</option>
+                            <option value="Plateau">Plateau</option>
+                            <option value="River">Rivers</option>
+                            <option value="Sokoto">Sokoto</option>
+                            <option value="Yobe">Yobe</option>
+                            <option value="Zamfara">Zamfara</option>
+                            <option value="FCT">FCT</option>
+                        </select>
+                        <!-- <div id="residence_error" class="val_error"><i class="fas fa-times-circle">Select state</i></div> -->
+                    </div>
+                    
+                    <div class="form-group">
+                        <select name="LGA" id="LG" required>
+                            <option value="">Select</option>
+                            <option value="Akoko North-East">Akoko North-East</option>
+                            <option value="Akoko South-East">Akoko South-East</option>
+                            <option value="Akure North">Akure North</option>
+                            <option value="Ese Ode">Ese Odo</option>
+                            <option value="Idanre">Idanre</option>
+                            <option value="ifedore">Ifedore</option>
+                            <option value="ilaje">Ilaje</option>
+                            <option value="ile-oluji">Ile Oluji/Okeigbo</option>
+                            <option value="irele">Irele</option>
+                            <option value="odigbo">Odigbo</option>
+                            <option value="okitipupa">Okitipupa</option>
+                            <option value="ondo-east">Ondo East</option>
+                            <option value="ondo-west">Ondo West</option>
+                            <option value="ose">Ose</option>
+                            <option value="owo">Owo</option>
+                        </select>
+                    <!-- <div id="lgovt_error" class="val_error"><i class="fas fa-times-circle">Select LGA</i></div> -->
+                    
+                </div>
+
+                <div class="form-group">
+                    <label for="">Area of Expertise</label>
+                    <select name="expertise" id="expertise" required>
+                        <option value="none">Select</option>
+                        <option value="plumbering">Plumbing</option>
+                        <option value="painting">Painting</option>
+                        <option value="carpentry">Carpentry</option>
+                        <option value="bricklaying">Bricklaying</option>
+                        <option value="electrical">Electrical works and Installation</option>
+                        <option value="food-service">Food service</option>
+                        <option value="fummigation">Fummigation and pest control</option>
+                        <option value="gardening">Gardening</option>
+                        <option value="interior">Interior Design</option>
+                        <option value="tiling">Tiling</option>
+                        <option value="home">Home tutor</option>
+                        <option value="event-ushers">Event Ushers</option>
+                        <option value="researcher">Researcher</option>
+                        <option value="others">Others</option>
+                    </select>
+                    <!-- <div id="expertise_error" class="val_error"><i class="fas fa-times-circle"> Select area of expertise</i></div> -->
+                </div>
+                
+                <div class="form-group">
+                    <label for="">Others? Please specify</label>
+                    <input type="text">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Years of Experience</label>
+                    <input type="number" name="experience" required>
+                    <!-- <div id="experience_error" class="val_error"><i class="fas fa-times-circle">Enter year(s) of experience</i></div> -->
+                </div>
+                
+                    <div class="form-group">
+                        <label for="">What's your ICT level</label>
+                        <select name="ict" id="">
+                        <option value="none">Select</option>
+                        <option value="Basic">Basic</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advanced">Advanced</option>
+                    </select>
+                    <!-- <div id="ict_error" class="val_error"><i class="fas fa-times-circle">Select ICT level</i></div> -->
+                </div>
+                <!--
+                    
+                    
+                    <div class="form-group">
+                        <label for="">Bank Name</label>
+                        <select name="bank-name" id="" required>
+                            <option value="">Select</option>
+                        <option value="">Access Bank Plc</option>
+                        <option value="">Citibank Nigeria Limited </option>
+                        <option value="">Diamond Bank Plc</option>
+                        <option value="">Ecobank Nigeria Plc</option>
+                        <option value="">Fidelity Bank Plc</option>
+                        <option value="">First Bank of Nigeria Limited</option>
+                        <option value="">First City Monument Bank Plc</option>
+                        <option value="">Guaranty Trust Bank Plc</option>
+                        <option value="">Heritage Banking Company Limited</option>
+                        <option value="">Jaiz Bank Plc</option>
+                        <option value=""> Keystone Bank Limited</option>
+                            <option value="">Polaris Bank Limited.</option> 
+                            <option value="">Providus Bank Limited</option>
+                            <option value="">Stanbic IBTC Bank Plc</option>
+                            <option value=""> Standard Chartered</option>
+                            <option value="">Sterling Bank Plc</option>
+                            <option value="">SunTrust Bank Nigeria Limited
+                                    <option value="Akure South">Akure South</option>
+                                <option value="">Union Bank of Nigeria Plc</option>
+                                <option value="">United Bank for Africa Plc</option>
+                            <option value=""> Unity Bank Plc</option>
+                            <option value="">   Wema Bank Plc</option>
+                            <option value="">Zenith Bank Plc</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="">Account Number</label>
+                            <input type="number" maxlength="11" required>
+                            <option value="Akoko North-West">Akoko North-West</option>
+                        </div>
+                        <option value="Akoko south-West">Akoko south-West</option>
+                        
+                        
+                        
+                        <div class="form-group">
+                            <label for="">Bank Verification Number</label>
+                <input type="text" maxlength="11" required>
+                </div>
+                
+                <div class="form-group">
+                <label for="pictureUpload">Upload Picture</label>
+                <input type="file" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="idUpload">Upload ID</label>
+                    <input type="file" required>
+                </div>
+                <option value="Taraba">Taraba</option>
+            -->
+            
+            <div class="form-group">
+                <label for="">Password</label>
+                <input type="password" name="pass" id="password" required>
+                <!-- <div id="pass_error" class="val_error"><i class="fas fa-times-circle">Enter password</i></div> -->
+            </div>
+
+            <div class="form-group">
+                <label for="">Confirm Password</label>
+                    <input type="password" name="cpass" id="cpassword" required>
+                    <!-- <div id="cpass_error" class="val_error"><i class="fas fa-times-circle">Confirm your password</i></div> -->
+                </div>
+
+                
+                <button type="submit" class="button" id="form_submit">Submit</button>
+            </div>
+        </div>
+     
   
 
-   <div class="col-xs-6 col-sm-6 col-ms-6">
-      <div class="form-group">
-        <label for="inputEmail" class="control-label"><strong>Email address *</strong></label>
-        <input type="email" class="form-control" id="inputEmail" aria-describedby ="emailHelp" name="inputEmail" placeholder="Email">
-        <small id="email_error" class="red-text flag-error"></small>
-      </div>
-  </div>
-
-   <div class="col-xs-6 col-sm-6 col-ms-6">
-      <div class="form-group">
-        <label for="inputPhoneNumber" class="control-label"><strong>Phone number *</strong></label>
-        <input type="tel" class="form-control" id="phoneNumber" aria-describedby ="phoneNo" name="phoneNo" placeholder="Phone number">
-        <small id="phoneNumber_error" class="red-text flag-error"></small>
-      </div>
-  </div>
-
-<div class="col-xs-6 col-sm-6 col-ms-6">
-  <div class="form-group">
-      <label for=""><strong>Local Govt. Area</strong></label>
-          <select id="localGovt" name="LGA" class="form-control">
-            <option value="none">Select L.G.A</option>
-            <option value="Agege">Agege</option>
-            <option value="Ajeromi Ifelodun">Ajeromi Ifelodun</option>
-            <option value="Alimosho">Alimosho</option>
-            <option value="AmuwoOdofin">AmuwoOdofin</option>
-            <option value="Apapa">Apapa</option>
-            <option value="Badagry">Badagry</option>
-            <option value="Epe">Epe</option>
-            <option value="EtiOsa">EtiOsa</option>
-            <option value="Ibeju/Lekki">Ibeju/Lekki</option>
-            <option value="Ifako-Ijaye">Ifako-Ijaye</option>
-            <option value="Ikeja">Ikeja</option>
-            <option value="Ikorodu">Ikorodu</option>
-            <option value="Kosofe">Kosofe</option>
-            <option value="Lagos Island">Lagos Island</option>
-            <option value="Lagos Mainland">Lagos Mainland</option>
-            <option value="Mushin">Mushin</option>
-            <option value="Ojo">Ojo</option>
-            <option value="Oshodi-Isolo">Oshodi-Isolo</option>
-            <option value="Shomolu">Shomolu</option>
-            <option value="Surulere">Surulere</option>
-          </select>
-  </div>
-</div>
-
-   <div class="col-xs-6 col-sm-6 col-ms-6">
-      <div class="form-group">
-        <label for="inputPhoneNumber" class="control-label"><strong>Address *</strong></label>
-        <input type="text" class="form-control" id="address" aria-describedby ="address" name="phoneNo" placeholder="Address" required>
-        <small id="address_error" class="red-text flag-error"></small>
-      </div>
-  </div>
-
-  <div class="col-xs-6 col-sm-6 col-ms-6">
-      <div class="form-group">
-          <label for="inputBVN" class="control-label"><strong>Bank Verification Number (BVN) *</strong></label>
-          <input type="number" class="form-control" id="BVN" aria-describedby ="BVN" name="BVN" placeholder="BVN" required>
-          <small id="BVN_error" class="red-text flag-error"></small>
-      </div>
-  </div>
-
-  <div class="col-xs-6 col-sm-6 col-ms-6">
-      <div class="form-group">
-          <label for="inputBVN" class="control-label"><strong>Bank Account Number *</strong></label>
-          <input type="tel" class="form-control" id="accountNo" aria-describedby ="accountNo" name="accountNo" placeholder="Bank Account Number" required>
-          <small id="accountNo_error" class="red-text flag-error"></small>
-      </div>
-  </div>
-
-
-  <div class="col-xs-6 col-sm-6 col-ms-6">
-      <div class="form-group">
-          <label for="inputPassword" class="control-label"><strong>Password *</strong></label>
-          <input type="password" class="form-control" id="password" aria-describedby ="password" name="inputPassword" placeholder="password" required>
-          <small id="password_error" class="red-text flag-error"></small>
-      </div>
-  </div>
-
-   <div class="col-xs-6 col-sm-6 col-ms-6">
-      <div class="form-group">
-          <label for="inputRepassword" class="control-label"><strong>Confirm password *</strong></label>
-          <input type="password" class="form-control" id="confirmPassword" aria-describedby ="password" name="rePassword" placeholder="confirm password" required>
-          <small id="rePassword_error" class="red-text flag-error"></small>
-      </div>
-  </div> 
-
-
-<div class="col-xs-12 col-sm-12 col-ms-12 align-center wow zoomIn text-center">
- <button name="sub" id="submitForm" class="btn btn-lg btn-primary">Join</button>
-</div>
-  <hr>
-
-</form>
-</div>
-</div>
-</div>
 
 
 
+        
+        <!-- <div class="form-group row" id="worker">
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-ms-6">
+                <div class="form-group">
+                    <label for="inputFullname"><strong>First Name *</strong></label>
+                    <input type="name" class="form-control" id="inputFirstname" aria-describedby="fullName" name="inputFullname" placeholder="First name">
+                    <small id="fullname_error" class="red-text flag-error"></small>
+                    </div>
+                </div>  
+
+            <div class="col-xs-6 col-sm-6 col-ms-6">
+            <div class="form-group">
+                <label for="inputFullname"><strong>Surname *</strong></label>
+                <input type="name" class="form-control" id="inputSurname" aria-describedby="Esurname" name="surname" placeholder="Surname">
+                <small id="fullname_error" class="red-text flag-error"></small>
+            </div>
+            </div>
+        
+
+            <div class="col-xs-6 col-sm-6 col-ms-6">
+                <div class="form-group">
+                    <label for="inputEmail" class="control-label"><strong>Email address *</strong></label>
+                <input type="email" class="form-control" id="inputEmail" aria-describedby ="emailHelp" name="inputEmail" placeholder="Email">
+                <small id="email_error" class="red-text flag-error"></small>
+            </div>
+        </div>
+        
+        <div class="col-xs-6 col-sm-6 col-ms-6">
+            <div class="form-group">
+                <label for="inputPhoneNumber" class="control-label"><strong>Phone number *</strong></label>
+                <input type="tel" class="form-control" id="phoneNumber" aria-describedby ="phoneNo" name="phoneNo" placeholder="Phone number">
+                <small id="phoneNumber_error" class="red-text flag-error"></small>
+            </div>
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-ms-6">
+            <div class="form-group">
+                <label for=""><strong>Local Govt. Area</strong></label>
+                <select id="localGovt" name="LGA" class="form-control">
+                    <option value="none">Select L.G.A</option>
+                    <option value="Agege">Agege</option>
+                    <option value="Ajeromi Ifelodun">Ajeromi Ifelodun</option>
+                    <option value="Alimosho">Alimosho</option>
+                    <option value="AmuwoOdofin">AmuwoOdofin</option>
+                    <option value="Apapa">Apapa</option>
+                    <option value="Badagry">Badagry</option>
+                    <option value="Epe">Epe</option>
+                    <option value="EtiOsa">EtiOsa</option>
+                    <option value="Ibeju/Lekki">Ibeju/Lekki</option>
+                    <option value="Ifako-Ijaye">Ifako-Ijaye</option>
+                    <option value="Ikeja">Ikeja</option>
+                    <option value="Ikorodu">Ikorodu</option>
+                    <option value="Kosofe">Kosofe</option>
+                    <option value="Lagos Island">Lagos Island</option>
+                    <option value="Lagos Mainland">Lagos Mainland</option>
+                    <option value="Mushin">Mushin</option>
+                    <option value="Ojo">Ojo</option>
+                    <option value="Oshodi-Isolo">Oshodi-Isolo</option>
+                    <option value="Shomolu">Shomolu</option>
+                    <option value="Kwara">Kwara</option>
+                    <option value="Surulere">Surulere</option>
+                </select>
+        </div>
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-ms-6">
+            <div class="form-group">
+                <label for="inputPhoneNumber" class="control-label"><strong>Address *</strong></label>
+                <input type="text" class="form-control" id="address" aria-describedby ="address" name="phoneNo" placeholder="Address" required>
+                <small id="address_error" class="red-text flag-error"></small>
+            </div>
+        </div>
+        
+        <div class="col-xs-6 col-sm-6 col-ms-6">
+            <div class="form-group">
+                <label for="inputBVN" class="control-label"><strong>Bank Verification Number (BVN) *</strong></label>
+                <input type="number" class="form-control" id="BVN" aria-describedby ="BVN" name="BVN" placeholder="BVN" required>
+                <small id="BVN_error" class="red-text flag-error"></small>
+                </div>
+                <label for="" id="LGA" name="lgovt">Local Government Area</label>
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-ms-6">
+            <div class="form-group">
+                <label for="inputBVN" class="control-label"><strong>Bank Account Number *</strong></label>
+                <input type="tel" class="form-control" id="accountNo" aria-describedby ="accountNo" name="accountNo" placeholder="Bank Account Number" required>
+                <small id="accountNo_error" class="red-text flag-error"></small>
+            </div>
+        </div>
 
 
-      <p id="#films">&nbsp;</div>
-      <p id="#films">&nbsp;</div>
+        <div class="col-xs-6 col-sm-6 col-ms-6">
+            <div class="form-group">
+                <label for="inputPassword" class="control-label"><strong>Password *</strong></label>
+                <input type="password" class="form-control" id="password" aria-describedby ="password" name="inputPassword" placeholder="password" required>
+                <small id="password_error" class="red-text flag-error"></small>
+            </div>
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-ms-6">
+            <div class="form-group">
+                <label for="inputRepassword" class="control-label"><strong>Confirm password *</strong></label>
+                <input type="password" class="form-control" id="confirmPassword" aria-describedby ="password" name="rePassword" placeholder="confirm password" required>
+                <small id="rePassword_error" class="red-text flag-error"></small>
+            </div>
+        </div> 
+
+
+        <div class="col-xs-12 col-sm-12 col-ms-12 align-center wow zoomIn text-center">
+        <button name="sub" id="submitForm" class="btn btn-lg btn-primary">Join</button>
+        </div>
+        <hr>
+
+        </form>
+        </div>
+        </div>
+        </div> -->
+
+
+
+        <!-- 
+
+            <p id="#films">&nbsp;</div>
+            <p id="#films">&nbsp;</div> -->
 
 
 
@@ -259,13 +562,17 @@
 </div>
 </footer>
 </div>
+</div>
 
  
 
 
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.js"></script> 
+<script src="bootstrap/js/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<!-- <script src="bootstrap/js/register.js"></script>  -->
+
 <script type="text/javascript">
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -276,66 +583,9 @@ function scrollFunction() {
     }
 }
 
-
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0; 
-}
-
-
-$("form").submit(function (e) {
-
-    e.preventDefault();
-
-    var error = "";
-    if ($("inputEmail").val() == "") {
-
-      error + = "<p> Please enter your Email Address</p>";
-    }
-
-    $("#error").html(error);
-
-    if ($("inputFullname").val() == "") {
-
-      error + = "<p> Please enter your Full name</p>";
-    }
-
-    $("#error").html(error);
-
-    if ($("BVN_error").val() == "") {
-
-      error + = "<p> kindly enter your BVN </p>";
-    }
-
-    $("#error").html(error);
-
-    if ($("accountNo_error").val() == "") {
-
-      error + = "<p> kindly enter your BVN </p>";
-    }
-
-    $("#error").html(error);
-
-    if ($("phoneNumber_error").val() == "") {
-
-      error + = "<p> kindly enter your BVN </p>";
-    }
-
-
-    if (error !="") {
-
-      $("#error").html(error);
-
-}
-});
-
-$("#hide").click(function(){
-    $("#client").hide();
-});
-
-$("#show").click(function(){
-    $("#worker").show();
-});
+</script>
+<script type="text/javascript">
+$('form-group').validate();
 </script>
 
 

@@ -4,8 +4,8 @@
 
         width: 100%;
         height: 100%; 
-        margin: 0;
-        padding: 0;
+        margin: auto;
+        padding-top: 130px;
 
         }
 
@@ -17,9 +17,6 @@
         }
 
 
-        
-
-        }
 
         .contact {
 
@@ -29,6 +26,27 @@
             margin-top:10px;
             background-color: white;
 
+        }
+
+        .search-title{
+            text-align: center; 
+            margin-top: 30px; 
+            font-size: 50px;
+            font-weight: 600;
+            padding-top: 70px; 
+            border-top: 50px;
+            color: white;
+        }
+
+        .search-writeup{
+            text-align: center; 
+            color: white;
+            font-weight: 600;
+    
+        }
+
+        .empty{
+            margin-top: 200px;
         }
 
        
@@ -313,9 +331,84 @@
         font-weight: 600;
         padding: 6px 15px
         margin-right: 5px;
-       }
+        
+      }
 
 
+
+/* workers registration form */
+
+
+#workers-form{
+    background-image: url(img/handyman.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+
+}
+       .content{
+        margin-top: 150px;
+        margin-left: 40px;
+        margin-bottom: 80px;
+        font-size: 20px;
+        font-weight: 100;
+       
+     }
+    
+     .app{
+       margin-left: 40px;
+       margin-bottom: 30px;
+       padding-left: 30px;
+     }
+     .form{
+       margin-left: 40px;
+       margin-bottom: 30px;
+       padding: 20px;
+       line-height: 1.5em;
+       font-weight: bold;
+     }
+
+     /* .text-field{
+         font-weight: bold;
+     } */
+
+     /* .form-group{
+         font-weight: 200;
+     } */
+    
+     .form label{
+        display: block;
+     }
+    
+     .form input{
+        padding: 8px;
+        width: 80%;
+     }
+    
+     .val_error{
+        color: #ff1f1f;
+     }
+    
+     
+     .button{
+       background-color:  black; 
+       color: #fff;
+       padding: 10px 15px;
+       border: none;
+       border-radius: 5px;
+     }
+    
+     .button:hover{
+        background: rgba(247, 115, 7, 0.979);
+        color: white;
+    
+     }
+    
+     .form-group{
+        float: left;
+        width: 100%;
+        
+     }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {...} 
