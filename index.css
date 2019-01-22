@@ -103,21 +103,18 @@
     }
 
 
-       
+       /* header */
         .nav-link {
             font-size: 18px;
             cursor: pointer;
                       
         }
 
-        .nav-link:hover,.nav-link:active{
+        a:nav-link:hover .nav-link:active{
             color: #FF6600;
         }
 
-        .nav-link:hover {
-            color: #FF6600;
-
-        }
+        
 
         
         #services {
@@ -451,14 +448,6 @@
     
 
 }
-       .content{
-        margin-top: 150px;
-        margin-left: 40px;
-        margin-bottom: 80px;
-        font-size: 20px;
-        font-weight: 100;
-       
-     }
 
      .title-name{
          color: white;
@@ -466,11 +455,7 @@
          font-weight: 300;
      }
     
-     .app{
-       margin-left: 40px;
-       margin-bottom: 30px;
-       padding-left: 30px;
-     }
+     
      .form{
        margin-left: 40px;
        margin-bottom: 30px;
@@ -479,13 +464,6 @@
        font-weight: bold;
      }
 
-     /* .text-field{
-         font-weight: bold;
-     } */
-
-     /* .form-group{
-         font-weight: 200;
-     } */
     
      .form label{
         display: block;
@@ -496,12 +474,11 @@
         width: 80%;
      }
     
-     /* .val_error{
-        color: #ff1f1f;
-     } */
-    
+         
      
      .button{
+       -webkit-transition-duration: 0.4s; 
+       transition-duration: 0.4s;
        background-color:  black; 
        color: #fff;
        padding: 10px 15px;
