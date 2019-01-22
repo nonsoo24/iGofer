@@ -275,11 +275,13 @@
 }
 
 .modal-title{
-    text-align: center!important;
+    text-align: center;
     font-weight: 200;
-
+    color: white;
 }
-
+.modal-header{
+    background-color: #FF6600; 
+}
 #entry label {
     font-weight: bold;
     color: #555;
@@ -443,7 +445,7 @@
 
 
 #workers-form{
-    background-image: url(img/handyman.jpg);
+    background-image:linear-gradient(rgba(88, 89, 90, 0.85), rgba(59, 87, 104, .85)), url(img/handyman.jpg);
     background-size: cover;
     background-attachment: fixed;
     
@@ -456,6 +458,12 @@
         font-size: 20px;
         font-weight: 100;
        
+     }
+
+     .title-name{
+         color: white;
+         font-size: 20px;
+         font-weight: 300;
      }
     
      .app{
@@ -488,9 +496,9 @@
         width: 80%;
      }
     
-     .val_error{
+     /* .val_error{
         color: #ff1f1f;
-     }
+     } */
     
      
      .button{
@@ -505,6 +513,9 @@
         background: rgba(247, 115, 7, 0.979);
         color: white;
     
+     }
+     .empty-div{
+         padding-top: 60px;
      }
     
      .form-group{

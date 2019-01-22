@@ -13,8 +13,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-        <script type="text/javascript" src="bootstrap/js/jquery-validation/dist/jquery.validate.min.js"></script>
-
+        
 
 
 </head>
@@ -22,47 +21,38 @@
 
 <header class="fixed-top scroll-change">
         <nav class="navbar navbar-expand-lg navbar-light bg-light" id="top">
-        <a class="navbar-brand" href="igofer.html"><img src="img/logo.jpg" alt="logo" class="logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="igofer.html"><img src="img/logo.jpg" alt="logo" class="logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-            <a class="nav-link" href="igofer.html"><strong>Home </strong><span class="sr-only">(current)</span></a>
-        </li>
-    
-        <li class="nav-item">
-            <a class="nav-link" href="contact.html"><strong>Contact Us</strong></a>
-        </li>
-
-
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <strong>Join</strong></a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="worker.html">Worker</a>
-            <a class="dropdown-item" href="member.html">Client</a>
-
-            </div>
-        </li>
+          </button>
         
-
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <strong>Login</strong>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="loginservice.html">Worker</a>
-            <a class="dropdown-item" href="loginclient.html">Client</a>
-
-    
-        </ul>
-    </div>
-    </div>
-    </nav>
-</header>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="igofer.html"><strong>Home </strong><span class="sr-only">(current)</span></a>
+              </li>
+          
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"><strong>About</strong></a>
+              </li>
+        
+              <li class="nav-item">
+                  <!-- <a class="nav-link" href="loginclient.html"><strong>Login</strong></a> -->
+                  <div class="open-button">
+                      <button type="button" class="nav-link" data-toggle="modal" data-target="#loginModal">Login</button>
+                  </div>
+                </li>
+        
+              <li class="nav-item">
+                  <a class="nav-link" href="contact.html"><strong>Contact</strong></a>
+              </li>
+        
+            </ul>
+          </div>
+        </div>
+        </nav>
+        </header>
+        
 
 
 
@@ -71,14 +61,14 @@
 
  
     <div id="workers-form">
-            <h2 style="text-align: center;"><strong>Join iGofer (To work)</strong></h2>
+            <h2 style="text-align: center; color: white; font-size: 50px; padding-bottom: 40px"><strong>Join iGofer</strong></h2>
     
-        <div class="form">
+    <form id="form">
         
        <div class="container">
             <div class="form-group">
-                <label for="surname">Surname</label>
-                <input type="text" name="surname" id="" required >
+                <label for="surname" class="title-name">Surname</label>
+                <input type="text" name="surname" class="form-control" id="" required >
                 <!-- <div id="surname_error" class="val_error">
                     <i class="fas fa-times-circle">Enter Surname</i>
                 </div>
@@ -89,19 +79,19 @@
             </div>
         
                 <div class="form-group">
-                    <label for="first-name">First name</label>
-                    <input type="text" name="firstname" required>
+                    <label for="first-name" class="title-name">First name</label>
+                    <input type="text" name="firstname" class="form-control" required>
                     <!-- <div id="firstname_error" class="val_error"><i class="fas fa-times-circle">Enter First name</i></div> -->
                 </div>
 
                 <div class="form-group">
-                    <label for="other-names">Other names</label>
-                    <input type="text" name="othernames">
+                    <label for="other-names" class="title-name">Other names</label>
+                    <input type="text" name="othernames" class="form-control">
                 </div>
 
                 <div class="form-group">
-                    <label for="gender">Gender</label>
-                    <select id="" name="gender" required>
+                    <label for="gender" class="title-name">Gender</label>
+                    <select id="" name="gender" class="form-control" required>
                         <option value="">Select</option>
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>    
@@ -110,39 +100,39 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="dbirth">Date of birth</label>
-                    <input type="date" name="dbirth" required>
+                    <label for="dbirth" class="title-name">Date of birth</label>
+                    <input type="date" name="dbirth" class="form-control" required>
                     <!--
                      <div id="dbirth_error" class="val_error"><i class="fas fa-times-circle">Enter Date of birth</i></div> -->
                 </div>
 
                 <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" required>
-                    <!-- <div id="email_error" class="val_error"><i class="fas fa-times-circle">Enter of email address</i></div> -->
+                    <label for="email" class="title-name">Email</label>
+                    <input type="email" name="email" class="form-control" required>
+                   <!-- <div id="email_error" class="val_error"><i class="fas fa-times-circle">Enter of email address</i></div> -->
                 </div>
 
                 <div class="form-group">
-                    <label for="number">Phone number</label>
-                    <input type="number" maxlength="11" name="number" required>
+                    <label for="number" class="title-name">Phone number</label>
+                    <input type="number" maxlength="11" name="number" class="form-control" required>
                     <!-- <div id="pnumber_error" class="val_error"><i class="fas fa-times-circle">Enter phone number</i></div> -->
                 </div>
 
                 <div class="form-group">
-                    <label for="">Contact Address</label>
-                    <input type="text" name="caddress" required>
+                    <label for="" class="title-name">Contact Address</label>
+                    <input type="text" name="caddress" class="form-control" required>
                     <!-- <div id="caddress_error" class="val_error"><i class="fas fa-times-circle">Enter contact address</i></div> -->
                 </div>
 
                 <div class="form-group">
-                    <label for="">Permanent Address</label>
-                    <input type="text" name="paddress" required>
+                    <label for="" class="title-name">Permanent Address</label>
+                    <input type="text" name="paddress" class="form-control" required>
                    
                 </div>
 
                 <div class="form-group">
-                    <label for="">Marital status</label>
-                    <select id="Marital-status" name="status" required>
+                    <label for="" class="title-name">Marital status</label>
+                    <select id="Marital-status" name="status" class="form-control" required>
                         <option value="">Select</option>
                         <option value="Single">Single</option>
                         <option value="Engaged">Engaged</option>
@@ -153,8 +143,8 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="">State of origin</label>
-                    <select id="statee" name="origin" required>
+                    <label for="" class="title-name">State of origin</label>
+                    <select id="statee" name="origin"class="form-control" required>
                         <option value="">Select</option>
                         <option value="Abia">Abia</option>
                         <option value="Adamawa">Adamawa</option>
@@ -198,8 +188,8 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="">State of residence</label>
-                    <select id="statee" name="residence" required>
+                    <label for="" class="title-name">State of residence</label>
+                    <select id="statee" name="residence" class="form-control" required>
                             <option value="">Select</option>
                             <option value="Abia">Abia</option>
                             <option value="Adamawa">Adamawa</option>
@@ -241,7 +231,8 @@
                     </div>
                     
                     <div class="form-group">
-                        <select name="LGA" id="LG" required>
+                        <label for="" class="title-name">LGA</label>
+                        <select name="LGA" id="LG" class="form-control" required>
                             <option value="">Select</option>
                             <option value="Akoko North-East">Akoko North-East</option>
                             <option value="Akoko South-East">Akoko South-East</option>
@@ -264,8 +255,8 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="">Area of Expertise</label>
-                    <select name="expertise" id="expertise" required>
+                    <label for="" class="title-name">Area of Expertise</label>
+                    <select name="expertise" id="expertise" class="form-control" required>
                         <option value="none">Select</option>
                         <option value="plumbering">Plumbing</option>
                         <option value="painting">Painting</option>
@@ -286,19 +277,19 @@
                 </div>
                 
                 <div class="form-group">
-                    <label for="">Others? Please specify</label>
-                    <input type="text">
+                    <label for="" class="title-name">Others? Please specify</label>
+                    <input type="text" class="form-control">
                 </div>
 
                 <div class="form-group">
-                    <label for="">Years of Experience</label>
-                    <input type="number" name="experience" required>
+                    <label for="" class="title-name">Years of Experience</label>
+                    <input type="number" name="experience" class="form-control" required>
                     <!-- <div id="experience_error" class="val_error"><i class="fas fa-times-circle">Enter year(s) of experience</i></div> -->
                 </div>
                 
                     <div class="form-group">
-                        <label for="">What's your ICT level</label>
-                        <select name="ict" id="">
+                        <label for="" class="title-name">What's your ICT level</label>
+                        <select name="ict" id="ict" class="form-control" required>
                         <option value="none">Select</option>
                         <option value="Basic">Basic</option>
                         <option value="Intermediate">Intermediate</option>
@@ -366,21 +357,22 @@
             -->
             
             <div class="form-group">
-                <label for="">Password</label>
-                <input type="password" name="pass" id="password" required>
+                <label for="" class="title-name">Password</label>
+                <input type="password" name="pass" id="password" class="form-control" required>
                 <!-- <div id="pass_error" class="val_error"><i class="fas fa-times-circle">Enter password</i></div> -->
             </div>
 
             <div class="form-group">
-                <label for="">Confirm Password</label>
-                    <input type="password" name="cpass" id="cpassword" required>
+                <label for="" class="title-name">Confirm Password</label>
+                    <input type="password" name="cpass" id="cpassword" class="form-control" required>
                     <!-- <div id="cpass_error" class="val_error"><i class="fas fa-times-circle">Confirm your password</i></div> -->
                 </div>
 
                 
                 <button type="submit" class="button" id="form_submit">Submit</button>
             </div>
-        </div>
+        </form>
+        <div class="empty-div"></div>
      
   
 
@@ -501,7 +493,7 @@
         </div>
         <hr>
 
-        </form>
+        </div>
         </div>
         </div>
         </div> -->
@@ -567,9 +559,13 @@
  
 
 
-<script src="bootstrap/js/jquery.js"></script>
-<script src="bootstrap/js/bootstrap.js"></script>
-<!-- <script src="bootstrap/js/register.js"></script>  -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> 
+
+
 
 <script type="text/javascript">
 
@@ -584,8 +580,30 @@ function scrollFunction() {
 }
 
 </script>
-<script type="text/javascript">
-$('form-group').validate();
+<script>
+    $('#form').validate({
+        messages:{
+            firstname: "Please enter your firstname",
+            surname: "Please enter your surname",
+            gender: "Please specify your gender",
+            dbirth: "Please enter your date of birth",
+            email:  "Please enter your email",
+            number: "Please enter your phone number",
+            caddress:  "Please enter your contact address",
+            paddress:   "Please enter your permanent address",
+            status: "What is your marital status?",
+            origin:    "State of origin is required",
+            residence:  "State of residence is required",
+            expertise:  "Expertise level is required",
+            LGA:    "What is your LGA",
+            experience: "Level of experience is required",
+            ict:    "What is your ICT level?",
+            pass:   "password is required",
+            cpass:  "password is required",
+
+
+        }
+    });
 </script>
 
 
