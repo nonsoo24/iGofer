@@ -20,7 +20,7 @@
 
         .contact {
 
-            width: 80%;
+            /* width: 80%; */
             margin-left: 100px;
             padding: 50px;
             margin-top:10px;
@@ -68,6 +68,16 @@
 
         }
 
+        /* contact */
+
+        .contact-message{
+            text-align: center;
+            font-weight: 600;
+            font-size: 40px;
+            padding-bottom: 50px;
+
+        }
+
         #clients{
             /* margin-top: 50px;
             border-bottom: 90px;
@@ -87,8 +97,9 @@
         padding-bottom: 40px;
     }
 
-    .fa-3x{
-        padding-top: 2px;
+    #submitForm{
+        margin-top: 35px;
+        margin-bottom: 55px;
     }
 
 
@@ -100,6 +111,12 @@
         }
 
         .nav-link:hover,.nav-link:active{
+            color: #FF6600;
+        }
+
+        .nav-link:hover {
+            color: #FF6600;
+
         }
 
         
@@ -109,6 +126,18 @@
         }
 
    
+    
+        #footer{
+            background-color: rgb(12, 9, 9);
+            color: white;
+            padding-top: 20px;
+        }
+        
+        .footer-text{
+            padding-bottom: 5px;
+
+        }
+ 
         #footer .footer-top .footer-newsletter input[type="email"] {
             border: 0;
             padding: 6px 8px;
