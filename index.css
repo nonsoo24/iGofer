@@ -260,7 +260,47 @@
             width: 900px;
         }
 
+        /* Modal Entry */
 
+.open-button {
+    background-color: none;
+    color: white;
+    padding: 16px 20px;
+    cursor: pointer;
+    /* opacity: 0.7; */
+    position: relative;
+    bottom: 23px;
+    right: 10px;
+    /* z-index: 9;   */
+}
+
+.modal-title{
+    text-align: center!important;
+    font-weight: 200;
+
+}
+
+#entry label {
+    font-weight: bold;
+    color: #555;
+}
+
+.modal-content {
+    background-color: #ddd!important;
+}
+
+#base {
+    margin: -10px auto;
+    text-align: center;
+}
+
+#base2 {
+    margin: 20px auto;
+    text-align: center;
+}
+
+
+        /* service-css-effect */
 
         .hovereffect {
             width: 100%;
