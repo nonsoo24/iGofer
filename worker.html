@@ -7,7 +7,7 @@
 
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>igofer</title>
+        <title>form</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit=no>
         <link rel="stylesheet" type="text/css" href="index.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
@@ -162,51 +162,7 @@
 
                     <div class="form-group">
                         <label for="" class="title-name">State of origin</label>
-                        <select id="statee" name="origin"class="form-control" required>
-                            <option value="">Select</option>
-                            <option value="Abia">Abia</option>
-                            <option value="Adamawa">Adamawa</option>
-                            <option value="Akwa Ibom">Akwa Ibom</option>
-                            <option value="Anambra">Anambra</option>
-                            <option value="Bauchi">Bauchi</option>
-                            <option value="Bayelsa">Bayelsa</option>
-                            <option value="Benue">Benue</option>
-                            <option value="Borno">Borno</option>
-                            <option value="Cross River">Cross River</option>
-                            <option value="Delta">Delta</option>
-                            <option value="Ebonyi">Ebonyi</option>
-                            <option value="Enugu">Enugu</option>
-                            <option value="Edo">Edo</option>
-                            <option value="Ekiti">Ekiti</option>
-                            <option value="Gombe">Gombe</option>
-                            <option value="Imo">Imo</option>
-                            <option value="Jigawa">Jigawa</option>
-                            <option value="Kaduna">Kaduna</option>
-                            <option value="Kano">Kano</option>
-                            <option value="Katsina">Katsina</option>
-                            <option value="Kebbi">Kebbi</option>
-                            <option value="Kogi">Kogi</option>
-                            <option value="Kwara">Kwara</option>
-                            <option value="Lagos">Lagos</option>
-                            <option value="Nasarawa">Nasarawa</option>
-                            <option value="Niger">Niger</option>
-                            <option value="Ogun">ogun</option>
-                            <option value="Ondo">Ondo</option>
-                            <option value="Osun">Osun</option>
-                            <option value="Oyo">Oyo</option>
-                            <option value="Plateau">Plateau</option>
-                            <option value="River">Rivers</option>
-                            <option value="Sokoto">Sokoto</option>
-                            <option value="Taraba">Taraba</option>
-                            <option value="Yobe">Yobe</option>
-                            <option value="Zamfara">Zamfara</option>
-                            <option value="FCT">FCT</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="" class="title-name">State of residence</label>
-                        <select id="statee" name="residence" class="form-control" required>
+                            <select id="origin" name="origin"class="form-control" required>
                                 <option value="">Select</option>
                                 <option value="Abia">Abia</option>
                                 <option value="Adamawa">Adamawa</option>
@@ -228,8 +184,9 @@
                                 <option value="Kaduna">Kaduna</option>
                                 <option value="Kano">Kano</option>
                                 <option value="Katsina">Katsina</option>
-                                <option value="kebbi">Kebbi</option>
-                                <option value="kogi">Kogi</option>
+                                <option value="Kebbi">Kebbi</option>
+                                <option value="Kogi">Kogi</option>
+                                <option value="Kwara">Kwara</option>
                                 <option value="Lagos">Lagos</option>
                                 <option value="Nasarawa">Nasarawa</option>
                                 <option value="Niger">Niger</option>
@@ -240,11 +197,54 @@
                                 <option value="Plateau">Plateau</option>
                                 <option value="River">Rivers</option>
                                 <option value="Sokoto">Sokoto</option>
+                                <option value="Taraba">Taraba</option>
                                 <option value="Yobe">Yobe</option>
                                 <option value="Zamfara">Zamfara</option>
                                 <option value="FCT">FCT</option>
                             </select>
-                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="" class="title-name">State of residence</label>
+                            <select id="residence" name="residence" class="form-control" required>
+                                    <option value="">Select</option>
+                                    <option value="Abia">Abia</option>
+                                    <option value="Adamawa">Adamawa</option>
+                                    <option value="Akwa Ibom">Akwa Ibom</option>
+                                    <option value="Anambra">Anambra</option>
+                                    <option value="Bauchi">Bauchi</option>
+                                    <option value="Bayelsa">Bayelsa</option>
+                                    <option value="Benue">Benue</option>
+                                    <option value="Borno">Borno</option>
+                                    <option value="Cross River">Cross River</option>
+                                    <option value="Delta">Delta</option>
+                                    <option value="Ebonyi">Ebonyi</option>
+                                    <option value="Enugu">Enugu</option>
+                                    <option value="Edo">Edo</option>
+                                    <option value="Ekiti">Ekiti</option>
+                                    <option value="Gombe">Gombe</option>
+                                    <option value="Imo">Imo</option>
+                                    <option value="Jigawa">Jigawa</option>
+                                    <option value="Kaduna">Kaduna</option>
+                                    <option value="Kano">Kano</option>
+                                    <option value="Katsina">Katsina</option>
+                                    <option value="kebbi">Kebbi</option>
+                                    <option value="kogi">Kogi</option>
+                                    <option value="Lagos">Lagos</option>
+                                    <option value="Nasarawa">Nasarawa</option>
+                                    <option value="Niger">Niger</option>
+                                    <option value="Ogun">ogun</option>
+                                    <option value="Ondo">Ondo</option>
+                                    <option value="Osun">Osun</option>
+                                    <option value="Oyo">Oyo</option>
+                                    <option value="Plateau">Plateau</option>
+                                    <option value="River">Rivers</option>
+                                    <option value="Sokoto">Sokoto</option>
+                                    <option value="Yobe">Yobe</option>
+                                    <option value="Zamfara">Zamfara</option>
+                                    <option value="FCT">FCT</option>
+                            </select>
+                    </div>
                         
                         <div class="form-group">
                             <label for="" class="title-name">LGA</label>
@@ -270,7 +270,7 @@
 
                     <div class="form-group">
                         <label for="" class="title-name">Area of Expertise</label>
-                        <select name="expertise" id="expertise" class="form-control" required>
+                        <select id="expertise" name="expertise" class="form-control" required>
                             <option value="none">Select</option>
                             <option value="plumbering">Plumbing</option>
                             <option value="painting">Painting</option>
@@ -301,12 +301,12 @@
                     
                         <div class="form-group">
                             <label for="" class="title-name">What's your ICT level</label>
-                            <select name="ict" id="ict" class="form-control" required>
-                                <option value="none">Select</option>
-                                <option value="Basic">Basic</option>
-                                <option value="Intermediate">Intermediate</option>
-                                <option value="Advanced">Advanced</option>
-                            </select>
+                                <select id="ict" name="ict" class="form-control" required>
+                                    <option value="none">Select</option>
+                                    <option value="Basic">Basic</option>
+                                    <option value="Intermediate">Intermediate</option>
+                                    <option value="Advanced">Advanced</option>
+                                </select>
                         </div>                
                 
                 <div class="form-group">
@@ -371,7 +371,7 @@
             </div>
           </div>
           
-          <div class="footer-txt text-center">
+          <div class="footer-text text-center">
                 <p class="footer-text"><strong>&copy; igofer 2018 | All rights reserved</strong></p>
             </div>
          </div>
@@ -419,7 +419,7 @@ function scrollFunction() {
             expertise:  "Expertise level is required",
             LGA:    "What is your LGA",
             experience: "Level of experience is required",
-            ict:    "What is your ICT level?",
+            ict:    "What is your ICT level ?",
             pass:   "password is required",
             cpass:  "password is required",
 
