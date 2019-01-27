@@ -92,46 +92,40 @@
   <div class="container">
     <h2 class="contact-message"><strong> We would love to hear from you. Send us a message</strong></h2>
 
-<form>   
+<form id="form">   
 
  
  <div class="form-group">
   
     <label for="inputFullname"><strong>Full Name *</strong></label>
-      <input type="name" class="form-control" id="inputFullname" aria-describedby="emailFullname" name="inputFullname" placeholder="Enter full-name">
-      <small id="fullname_error" class="red-text flag-error"></small>
+      <input type="name" class="form-control" id="inputFullname" aria-describedby="emailFullname" name="fullname" placeholder="Enter full-name" required>
     </div>
   
 
    <div class="form-group">
-    <label for="inputEmail" class="control-label"><strong>Email address *</strong></label>
-    <input type="email" class="form-control" id="inputEmail" aria-describedby ="emailHelp" name="inputEmail" placeholder="Enter email address" required>
-    <small id="email_error" class="red-text flag-error"></small>
+      <label for="inputEmail" class="control-label"><strong>Email address *</strong></label>
+      <input type="email" class="form-control" id="inputEmail" aria-describedby ="emailHelp" name="email" placeholder="Enter email address" required>
   </div>
 
   <div class="form-group">
     <label for="inputMessage"><strong>Subject *</strong></label>
-    <textarea class="form-control" id="inputSubject" name="inputSubject" rows="1" required></textarea>
-    <small id="subject_error" class="red-text flag-error"></small>
+    <textarea class="form-control" id="inputSubject" name="subject" rows="1" required></textarea>
   </div>
 
   <div class="form-group">
     <label for="inputMessage"><strong>Message *</strong></label>
-    <textarea class="form-control" id="inputMessage" name="inputMessage" rows="6" required></textarea>
-    <small id="message_error" class="red-text flag-error"></small>
+    <textarea class="form-control" id="inputMessage" name="message" rows="6" required></textarea>
   </div>
-    <button name="sub" id="submitForm" class="btn btn-lg btn-primary">Send</button>
-  <hr>
 
-</form>
+  <div>
+      <button type="submit" class="button" id="form_submit">Submit</button>
+  </div>
+  <div class="empty-div"></div>
+
+  </form>
+  </div>
+  </div>
 </div>
-</div>
-</div>
-
-
-      <p id="#films">&nbsp;</div>
-      <p id="#films">&nbsp;</div>
-
 
 
 
@@ -199,6 +193,20 @@ function scrollFunction() {
     }
 }
 </script>
+
+<script>
+    $('#form').validate({
+        messages:{
+            fullname: "Please enter your full-name",
+            email:  "Please enter your email",
+            subject: "This field is required",
+            message:  "Please fill your complains here",
+
+
+        }
+    });
+</script>
+
 
 
 </body>
